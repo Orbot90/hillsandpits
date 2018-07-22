@@ -49,7 +49,5 @@ class CalculationContext {
         this.currentTrend = TrendDirection.ASCENDING;
     }
 
-    enum TrendDirection {
-        DESCENDING, ASCENDING
-    }
+
 }

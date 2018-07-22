@@ -27,7 +27,7 @@ public class WaterCalculatorImpl implements WaterCalculator {
         CalculationContext calculationContext = new CalculationContext();
 
         for (int currentHeight : landscape) {
-            if (calculationContext.getCurrentTrend() == CalculationContext.TrendDirection.ASCENDING) {
+            if (calculationContext.getCurrentTrend() == TrendDirection.ASCENDING) {
                 if (currentHeight >= lastPeak) {
                     lastPeak = currentHeight;
                     calculationContext.addHeightToPit(currentHeight);
